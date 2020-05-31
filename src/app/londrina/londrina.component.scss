@@ -142,3 +142,31 @@
   display: flex;
   flex-direction: column;
 }
+
+.vote-pop {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #717275;
+}
+
+.v1:hover {
+  color: #d92027;
+}
+
+.v2:hover {
+  color: #ff9234;
+}
+
+.v3:hover {
+  color: #ffcd3c;
+}
+
+.v4:hover {
+  color: #BBDB06;
+}
+
+.v5:hover {
+  color: #35d0ba;
+}
