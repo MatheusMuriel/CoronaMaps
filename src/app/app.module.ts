@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 // Meterial
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -33,7 +35,8 @@ import { LondrinaComponent } from './londrina/londrina.component';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

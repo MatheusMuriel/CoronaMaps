@@ -1,72 +1,106 @@
-<mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="../../assets/catuai.jpeg" alt="Photo of a Shiba Inu">
-  
-  <mat-card-content>
+<div class="container">
+
+  <mat-card class="example-card">
+      <img mat-card-image class="img-card" src="../../assets/catuai.jpeg">
+      
+      <mat-card-content>
+        
+        <div class="title-line">
+          <p class="name-local">Shopping Catuaí</p>
     
-    <div class="title-line">
-      <p class="name-local">Shopping Catuaí</p>
-
-      <svg class="rat-local" viewBox="0 0 181 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14.6171 0.978088L17.8944 11.6804L28.5001 11.6804L19.9199 18.2948L23.1973 28.9972L14.6171 22.3828L6.03685 28.9972L9.3142 18.2948L0.733985 11.6804L11.3397 11.6804L14.6171 0.978088Z" fill="#0C1A54"/>
-        <path d="M50.4044 0.978088L53.6818 11.6804L64.2875 11.6804L55.7073 18.2948L58.9846 28.9972L50.4044 22.3828L41.8242 28.9972L45.1015 18.2948L36.5213 11.6804L47.1271 11.6804L50.4044 0.978088Z" fill="#0C1A52"/>
-        <path d="M89.0174 0.978088L92.2948 11.6804L102.901 11.6804L94.3203 18.2948L97.5977 28.9972L89.0174 22.3828L80.4372 28.9972L83.7146 18.2948L75.1344 11.6804L85.7401 11.6804L89.0174 0.978088Z" fill="#0C1951"/>
-        <path d="M127.63 0.978088L130.908 11.6804L141.514 11.6804L132.933 18.2948L136.211 28.9972L127.63 22.3828L119.05 28.9972L122.328 18.2948L113.747 11.6804L124.353 11.6804L127.63 0.978088Z" fill="#0C1A54"/>
-        <path d="M166.243 0.978088L169.52 11.6804L180.126 11.6804L171.546 18.2948L174.823 28.9972L166.243 22.3828L157.663 28.9972L160.94 18.2948L152.36 11.6804L162.966 11.6804L166.243 0.978088Z" fill="#C4C4C4"/>
-      </svg>
-    </div>
-
-    <svg class="separator" viewBox="0 0 603 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <line x1="0.444824" y1="1.12897" x2="602.555" y2="1.12897" stroke="black"/>
-    </svg>
-
-    <div class="card-cont">
-      <p class="desc">Segundo avaliações, esse local parece estar seguindo bem as medidas preventivas contra o COVID-19!</p>
-
-      <div class="avaliacao">
-        <p class="title"> Avalie as medidas de prevenção desse local:</p>
-
-        <div class="icons">
-
-          <div class="icon">
-            <fa-icon [icon]="faHeadSideMask"></fa-icon>
-              <p>Uso de máscaras</p>
-          </div>
-
-          <div class="icon">
-            <fa-icon [icon]="faHandHoldingWater"></fa-icon>
-            <p>Álcool em gel</p>
-          </div>
-
-          <div class="icon">
-            <fa-icon [icon]="faThermometerHalf"></fa-icon>
-            <p>Verificação de temperatura</p>
-          </div>
-          
-          <div class="icon">
-            <fa-icon [icon]="faPeopleArrows"></fa-icon>
-            <p class="title">Distanciamento social</p>
-          </div>
-          
+          <svg class="rat-local" viewBox="0 0 181 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6171 0.978088L17.8944 11.6804L28.5001 11.6804L19.9199 18.2948L23.1973 28.9972L14.6171 22.3828L6.03685 28.9972L9.3142 18.2948L0.733985 11.6804L11.3397 11.6804L14.6171 0.978088Z" fill="#0C1A54"/>
+            <path d="M50.4044 0.978088L53.6818 11.6804L64.2875 11.6804L55.7073 18.2948L58.9846 28.9972L50.4044 22.3828L41.8242 28.9972L45.1015 18.2948L36.5213 11.6804L47.1271 11.6804L50.4044 0.978088Z" fill="#0C1A52"/>
+            <path d="M89.0174 0.978088L92.2948 11.6804L102.901 11.6804L94.3203 18.2948L97.5977 28.9972L89.0174 22.3828L80.4372 28.9972L83.7146 18.2948L75.1344 11.6804L85.7401 11.6804L89.0174 0.978088Z" fill="#0C1951"/>
+            <path d="M127.63 0.978088L130.908 11.6804L141.514 11.6804L132.933 18.2948L136.211 28.9972L127.63 22.3828L119.05 28.9972L122.328 18.2948L113.747 11.6804L124.353 11.6804L127.63 0.978088Z" fill="#0C1A54"/>
+            <path d="M166.243 0.978088L169.52 11.6804L180.126 11.6804L171.546 18.2948L174.823 28.9972L166.243 22.3828L157.663 28.9972L160.94 18.2948L152.36 11.6804L162.966 11.6804L166.243 0.978088Z" fill="#C4C4C4"/>
+          </svg>
         </div>
+    
+        <svg class="separator" viewBox="0 0 603 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0.444824" y1="1.12897" x2="602.555" y2="1.12897" stroke="black"/>
+        </svg>
+    
+        <div class="card-cont">
+          <p class="desc">Segundo avaliações, esse local parece estar seguindo bem as medidas preventivas contra o COVID-19!</p>
+    
+          <div class="avaliacao">
+            <p class="title"> Avalie as medidas de prevenção desse local:</p>
+    
+            <div class="icons">
+    
+              <div class="icon">
+                <svg class="circle" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="43.7555" cy="43.5611" r="41.9382" stroke="#55DF6F" stroke-width="2"/>
+                </svg>
+                <div class="fa">
+                  <fa-icon [icon]="faHeadSideMask"></fa-icon>
+                </div>
+                <div class="text">
+                  <p>Uso de</p>
+                  <p>máscaras</p>
+                </div>
+              </div>
+    
+              <div class="icon">
+                <svg class="circle" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="43.7555" cy="43.5611" r="41.9382" stroke="#55DF6F" stroke-width="2"/>
+                </svg>
+                <div class="fa">
+                  <fa-icon [icon]="faHandHoldingWater"></fa-icon>
+                </div>
+                <div class="text">
+                  <p>Álcool em</p>
+                  <p>gel</p>
+                </div>
+              </div>
+    
+              <div class="icon">
+                <svg class="circle" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="43.7555" cy="43.5611" r="41.9382" stroke="#55DF6F" stroke-width="2"/>
+                </svg>
+                <div class="fa">
+                  <fa-icon [icon]="faThermometerHalf"></fa-icon>
+                </div>
+                <div class="text">
+                  <p>Verificação de</p>
+                  <p>temperatura</p>
+                </div>
+              </div>
+              
+              <div class="icon">
+                <svg class="circle" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="43.7555" cy="43.5611" r="41.9382" stroke="#55DF6F" stroke-width="2"/>
+                </svg>
+                <div class="fa">
+                  <fa-icon [icon]="faPeopleArrows"></fa-icon>
+                </div>
+                <div class="text">
+                  <p>Distanciamento</p>
+                  <p>social</p>
+                </div>
 
-        <div>
-          <mat-form-field class="comment-box" appearance="fill">
-            <mat-label>Comente</mat-label>
-            <textarea matInput></textarea>
-          </mat-form-field>
+              </div>
+              
+            </div>
+    
+            <div class="comment-cont">
+              <mat-form-field class="comment-box" appearance="fill">
+                <mat-label>Comente</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
+              <button mat-raised-button color="primary">Enviar</button>
+            </div>
+    
+          </div>
         </div>
+      </mat-card-content>
+  </mat-card>
 
-      </div>
-    </div>
+  <div class="mapa">
+    <p class="title">Londrina | PR</p>
+    <img src="../../assets/lond1.png">
+  </div>
 
-  </mat-card-content>
-  
-  <mat-card-actions class="card-actions">
-    <button mat-button class="send-btn">Send</button>
-  </mat-card-actions>
-</mat-card>
+</div>
+
