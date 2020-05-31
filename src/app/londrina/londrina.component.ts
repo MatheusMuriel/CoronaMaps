@@ -6,6 +6,8 @@ import {
   faHandHoldingWater 
 } from '@fortawesome/free-solid-svg-icons';
 import {MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipDefaultOptions} from '@angular/material/tooltip';
+import {MatDialog} from '@angular/material/dialog';
+import { AgradecimentoComponent } from "../agradecimento/agradecimento.component";
 
 export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
   showDelay: 0,
@@ -27,16 +29,14 @@ export class LondrinaComponent implements OnInit {
   faThermometerHalf = faThermometerHalf;
   faHandHoldingWater = faHandHoldingWater;
 
-  maskClick(mask) {
-    console.log(mask);
-    mask.show = true;
-    console.log(mask);
-  }
+  constructor(public dialog: MatDialog) {}
 
-  constructor(
+  openDialog() {
+    const dialogRef = this.dialog.open(AgradecimentoComponent);
 
-  ) {
-
+    dialogRef.afterClosed().subscribe(result => {
+      
+    });
   }
 
   ngOnInit() {

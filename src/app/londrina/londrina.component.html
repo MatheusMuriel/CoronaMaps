@@ -2,7 +2,6 @@
 
   <mat-card class="example-card">
       <img mat-card-image class="img-card" src="../../assets/catuai.jpeg">
-      
       <mat-card-content>
         
         <div class="title-line">
@@ -121,7 +120,7 @@
                 <mat-label>Comente</mat-label>
                 <textarea matInput></textarea>
               </mat-form-field>
-              <button mat-raised-button color="primary">Enviar</button>
+              <button mat-raised-button color="primary" (click)="openDialog()">Enviar</button>
             </div>
     
           </div>
