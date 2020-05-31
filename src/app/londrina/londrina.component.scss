@@ -7,6 +7,10 @@
   background-size: cover;
 }
 
+.mat-card-content {
+  margin-bottom: unset;
+}
+
 .title-line {
   display: flex;
   flex-direction: row;
@@ -40,10 +44,6 @@
   color: #000000;
 }
 
-.card-cont .avaliacao {
-
-}
-
 .card-cont .avaliacao .title {
   font-family: Roboto;
   font-style: normal;
@@ -64,10 +64,10 @@
     flex: 1;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     fa-icon {
       font-size: 30px;
-      margin-bottom: 10px;
     }
 
     p {
@@ -84,14 +84,16 @@
 .send-btn {
   background: #5A78E6;
   border-radius: 6px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 140.62%;
-  /* or 25px */
   text-align: center;
-
   color: #FFFFFF;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.comment-box {
+  width: 100%;
+  height: 100%;
 }
