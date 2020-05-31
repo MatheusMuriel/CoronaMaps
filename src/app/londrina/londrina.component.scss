@@ -1,0 +1,97 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.title-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.rat-local {
+  width: 40%;
+}
+
+.name-local {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #0C1A54;
+  margin: unset;
+}
+
+.card-cont .desc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140.62%;
+
+  color: #000000;
+}
+
+.card-cont .avaliacao {
+
+}
+
+.card-cont .avaliacao .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140.62%;
+  color: #000000;
+}
+
+.card-cont .avaliacao .icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .icon {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    fa-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 110%;
+      text-align: center;
+    }
+  }
+}
+
+.send-btn {
+  background: #5A78E6;
+  border-radius: 6px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140.62%;
+  /* or 25px */
+  text-align: center;
+
+  color: #FFFFFF;
+}
