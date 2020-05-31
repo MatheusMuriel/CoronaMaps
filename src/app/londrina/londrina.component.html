@@ -28,8 +28,40 @@
             <p class="title"> Avalie as medidas de prevenção desse local:</p>
     
             <div class="icons">
+
+              <ng-template #maskPop>
+                <fa-icon [icon]="faHeadSideMask"></fa-icon>
+                <fa-icon [icon]="faHeadSideMask"></fa-icon>
+                <fa-icon [icon]="faHeadSideMask"></fa-icon>
+                <fa-icon [icon]="faHeadSideMask"></fa-icon>
+                <fa-icon [icon]="faHeadSideMask"></fa-icon>
+              </ng-template>
+
+              <ng-template #alcoolPop>
+                <fa-icon [icon]="faHandHoldingWater"></fa-icon>
+                <fa-icon [icon]="faHandHoldingWater"></fa-icon>
+                <fa-icon [icon]="faHandHoldingWater"></fa-icon>
+                <fa-icon [icon]="faHandHoldingWater"></fa-icon>
+                <fa-icon [icon]="faHandHoldingWater"></fa-icon>
+              </ng-template>
+
+              <ng-template #tempPop>
+                <fa-icon [icon]="faThermometerHalf" ></fa-icon>
+                <fa-icon [icon]="faThermometerHalf" ></fa-icon>
+                <fa-icon [icon]="faThermometerHalf" ></fa-icon>
+                <fa-icon [icon]="faThermometerHalf" ></fa-icon>
+                <fa-icon [icon]="faThermometerHalf" ></fa-icon>
+              </ng-template>
+
+              <ng-template #distPop>
+                <fa-icon [icon]="faPeopleArrows"></fa-icon>
+                <fa-icon [icon]="faPeopleArrows"></fa-icon>
+                <fa-icon [icon]="faPeopleArrows"></fa-icon>
+                <fa-icon [icon]="faPeopleArrows"></fa-icon>
+                <fa-icon [icon]="faPeopleArrows"></fa-icon>
+              </ng-template>
     
-              <div class="icon">
+              <div class="icon" [ngbPopover]="maskPop">
                 <svg class="circle" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="43.7555" cy="43.5611" r="41.9382" stroke="#55DF6F" stroke-width="2"/>
                 </svg>
@@ -42,7 +74,7 @@
                 </div>
               </div>
     
-              <div class="icon">
+              <div class="icon" [ngbPopover]="alcoolPop">
                 <svg class="circle" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="43.7555" cy="43.5611" r="41.9382" stroke="#55DF6F" stroke-width="2"/>
                 </svg>
@@ -55,12 +87,12 @@
                 </div>
               </div>
     
-              <div class="icon">
+              <div class="icon" [ngbPopover]="tempPop">
                 <svg class="circle" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="43.7555" cy="43.5611" r="41.9382" stroke="#55DF6F" stroke-width="2"/>
                 </svg>
                 <div class="fa">
-                  <fa-icon [icon]="faThermometerHalf"></fa-icon>
+                  <fa-icon [icon]="faThermometerHalf" ></fa-icon>
                 </div>
                 <div class="text">
                   <p>Verificação de</p>
@@ -68,7 +100,7 @@
                 </div>
               </div>
               
-              <div class="icon">
+              <div class="icon" [ngbPopover]="distPop">
                 <svg class="circle" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="43.7555" cy="43.5611" r="41.9382" stroke="#55DF6F" stroke-width="2"/>
                 </svg>

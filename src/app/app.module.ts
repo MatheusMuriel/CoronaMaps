@@ -19,6 +19,9 @@ import {MatCardModule} from '@angular/material/card';
 
 import { MapsComponent } from './maps/maps.component';
 import { LondrinaComponent } from './londrina/londrina.component';
+import { TippyModule } from 'ng-tippy';
+import { NgxPopper } from 'angular-popper';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { LondrinaComponent } from './londrina/londrina.component';
     MatInputModule,
     MatCardModule,
     FontAwesomeModule,
-    MatTooltipModule
+    MatTooltipModule,
+    TippyModule,
+    NgxPopper,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
