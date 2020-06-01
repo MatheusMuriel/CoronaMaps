@@ -15,13 +15,10 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input'; 
 import {MatCardModule} from '@angular/material/card';
-
 //
 
 import { MapsComponent } from './maps/maps.component';
 import { LondrinaComponent } from './londrina/londrina.component';
-import { TippyModule } from 'ng-tippy';
-import { NgxPopper } from 'angular-popper';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AgradecimentoComponent } from './agradecimento/agradecimento.component';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -50,8 +47,6 @@ import { ParanaComponent } from './parana/parana.component';
     MatCardModule,
     FontAwesomeModule,
     MatTooltipModule,
-    TippyModule,
-    NgxPopper,
     NgbModule,
     MatDialogModule
   ],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-brasil',
@@ -8,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class BrasilComponent implements OnInit {
 
   clickBraza() {
-    window.location.href = "http://localhost:4200/londrina"
+    this.router.navigate(['./londrina']);
+    // window.location.href = "http://192.168.0.5:4200/londrina"
   }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }

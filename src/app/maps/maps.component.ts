@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-maps',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maps.component.scss']
 })
 export class MapsComponent implements OnInit {
+  clik() {
+    this.router.navigate(['./brazil']);
+    // window.location.href = "http://192.168.0.5':4200/brazil"
+  }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }

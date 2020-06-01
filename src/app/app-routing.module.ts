@@ -13,6 +13,10 @@ const routes: Routes = [
     path:  'brazil',
     component:  BrasilComponent
   },
+  {
+    path:  '',
+    component:  BrasilComponent
+  },
 ];
 
 @NgModule({
