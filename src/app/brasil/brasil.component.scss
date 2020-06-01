@@ -1,0 +1,56 @@
+.toolbar-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rig-toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+}
+
+.buttons-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-toolbar #login-btn {
+  margin-right: 15px;
+}
+
+.search {
+  border-right: 1px solid #ccc;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+
+body {
+  background-color: #3f51b5;
+}
+
+.toolbar-img img {
+  width: 100px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cont .braza svg {
+  height: 90%;
+  margin-top: 10px;
+}
+
+.cont .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.cont .text svg {
+  height: 70%;
+  margin-bottom: 110px;
+}

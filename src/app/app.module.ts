@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatTooltipModule} from '@angular/material/tooltip';
@@ -24,6 +25,8 @@ import { NgxPopper } from 'angular-popper';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AgradecimentoComponent } from './agradecimento/agradecimento.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { BrasilComponent } from './brasil/brasil.component';
+import { ParanaComponent } from './parana/parana.component';
 //import { ShareButtonsModule } from '@ngx-share/buttons';
 
 
@@ -32,7 +35,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppComponent,
     MapsComponent,
     LondrinaComponent,
-    AgradecimentoComponent
+    AgradecimentoComponent,
+    BrasilComponent,
+    ParanaComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +56,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [ RouterModule ]
 })
 export class AppModule { }

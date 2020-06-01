@@ -1,7 +1,7 @@
 <div class="container">
 
   <mat-card class="example-card">
-      <img mat-card-image class="img-card" src="../../assets/catuai.jpeg">
+      <img mat-card-image class="img-card" src="../../assets/Catuai.jpg">
       <mat-card-content>
         
         <div class="title-line">
@@ -29,35 +29,55 @@
             <div class="icons">
 
               <ng-template class="vote-pop" #maskPop>
-                <fa-icon class="vote-pop v1" [icon]="faHeadSideMask"></fa-icon>
-                <fa-icon class="vote-pop v2" [icon]="faHeadSideMask"></fa-icon>
-                <fa-icon class="vote-pop v3" [icon]="faHeadSideMask"></fa-icon>
-                <fa-icon class="vote-pop v4" [icon]="faHeadSideMask"></fa-icon>
-                <fa-icon class="vote-pop v5" [icon]="faHeadSideMask"></fa-icon>
+                <div class="aval-jan">
+                  <p>Como você avaliaria a quantidade de pessoas usando máscaras nesse local?</p>
+                  <div>
+                    <fa-icon class="vote-pop v1" [icon]="faHeadSideMask"></fa-icon>
+                    <fa-icon class="vote-pop v2" [icon]="faHeadSideMask"></fa-icon>
+                    <fa-icon class="vote-pop v3" [icon]="faHeadSideMask"></fa-icon>
+                    <fa-icon class="vote-pop v4" [icon]="faHeadSideMask"></fa-icon>
+                    <fa-icon class="vote-pop v5" [icon]="faHeadSideMask"></fa-icon>
+                  </div>
+                </div>
               </ng-template>
 
               <ng-template #alcoolPop>
-                <fa-icon class="vote-pop v1" [icon]="faHandHoldingWater"></fa-icon>
-                <fa-icon class="vote-pop v2" [icon]="faHandHoldingWater"></fa-icon>
-                <fa-icon class="vote-pop v3" [icon]="faHandHoldingWater"></fa-icon>
-                <fa-icon class="vote-pop v4" [icon]="faHandHoldingWater"></fa-icon>
-                <fa-icon class="vote-pop v5" [icon]="faHandHoldingWater"></fa-icon>
+                <div class="aval-jan">
+                  <p>Como você avaliaria a disponibilidade de álcool em gel nesse local?</p>
+                  <div>
+                    <fa-icon class="vote-pop v1" [icon]="faHandHoldingWater"></fa-icon>
+                    <fa-icon class="vote-pop v2" [icon]="faHandHoldingWater"></fa-icon>
+                    <fa-icon class="vote-pop v3" [icon]="faHandHoldingWater"></fa-icon>
+                    <fa-icon class="vote-pop v4" [icon]="faHandHoldingWater"></fa-icon>
+                    <fa-icon class="vote-pop v5" [icon]="faHandHoldingWater"></fa-icon>
+                  </div>
+                </div>
               </ng-template>
 
               <ng-template #tempPop>
-                <fa-icon class="vote-pop v1" [icon]="faThermometerHalf" ></fa-icon>
-                <fa-icon class="vote-pop v2" [icon]="faThermometerHalf" ></fa-icon>
-                <fa-icon class="vote-pop v3" [icon]="faThermometerHalf" ></fa-icon>
-                <fa-icon class="vote-pop v4" [icon]="faThermometerHalf" ></fa-icon>
-                <fa-icon class="vote-pop v5" [icon]="faThermometerHalf" ></fa-icon>
+                <div class="aval-jan">
+                  <p>Nesse local há medição de temperatura antes das pessoas entrarem?</p>
+                  <div>
+                    <fa-icon class="vote-pop v1" [icon]="faThermometerHalf" ></fa-icon>
+                    <fa-icon class="vote-pop v2" [icon]="faThermometerHalf" ></fa-icon>
+                    <fa-icon class="vote-pop v3" [icon]="faThermometerHalf" ></fa-icon>
+                    <fa-icon class="vote-pop v4" [icon]="faThermometerHalf" ></fa-icon>
+                    <fa-icon class="vote-pop v5" [icon]="faThermometerHalf" ></fa-icon>
+                  </div>
+                </div>
               </ng-template>
 
               <ng-template #distPop>
-                <fa-icon class="vote-pop v1" [icon]="faPeopleArrows"></fa-icon>
-                <fa-icon class="vote-pop v2" [icon]="faPeopleArrows"></fa-icon>
-                <fa-icon class="vote-pop v3" [icon]="faPeopleArrows"></fa-icon>
-                <fa-icon class="vote-pop v4" [icon]="faPeopleArrows"></fa-icon>
-                <fa-icon class="vote-pop v5" [icon]="faPeopleArrows"></fa-icon>
+                <div class="aval-jan">
+                  <p>Como você avaliaria o distanciamento social nesse local?</p>
+                  <div>
+                    <fa-icon class="vote-pop v1" [icon]="faPeopleArrows"></fa-icon>
+                    <fa-icon class="vote-pop v2" [icon]="faPeopleArrows"></fa-icon>
+                    <fa-icon class="vote-pop v3" [icon]="faPeopleArrows"></fa-icon>
+                    <fa-icon class="vote-pop v4" [icon]="faPeopleArrows"></fa-icon>
+                    <fa-icon class="vote-pop v5" [icon]="faPeopleArrows"></fa-icon>
+                  </div>
+                </div>
               </ng-template>
     
               <div class="icon" [ngbPopover]="maskPop">
@@ -94,8 +114,8 @@
                   <fa-icon [icon]="faThermometerHalf" ></fa-icon>
                 </div>
                 <div class="text">
-                  <p>Verificação de</p>
-                  <p>temperatura</p>
+                  <p>Temperatura</p>
+                  <p>Corporal</p>
                 </div>
               </div>
               
@@ -108,7 +128,6 @@
                 </div>
                 <div class="text">
                   <p>Distanciamento</p>
-                  <p>social</p>
                 </div>
 
               </div>
@@ -117,7 +136,7 @@
     
             <div class="comment-cont">
               <mat-form-field class="comment-box" appearance="fill">
-                <mat-label>Comente</mat-label>
+                <mat-label>Comente algo se quiser!</mat-label>
                 <textarea matInput></textarea>
               </mat-form-field>
               <button mat-raised-button color="primary" (click)="openDialog()">Enviar</button>
@@ -130,7 +149,7 @@
 
   <div class="mapa">
     <p class="title">Londrina | PR</p>
-    <img src="../../assets/lond1.png">
+    <img src="../../assets/MAPA.png">
   </div>
 
 </div>

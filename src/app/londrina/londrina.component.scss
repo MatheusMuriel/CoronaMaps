@@ -171,3 +171,15 @@
 .v5:hover {
   color: #35d0ba;
 }
+
+.aval-jan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
